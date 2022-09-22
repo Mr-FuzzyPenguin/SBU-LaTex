@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LaTex typer</title>
+
+    <!-- Bulma -->
+    <link href="https://wikiki.github.io/css/documentation.css?v=201911011043" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel="stylesheet" type="text/css" />
+    <!-- Bulma fonts -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://use.fontawesome.com/5cd833ef09.js"></script>
+
+
+    <!-- KaTeX and other LaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.css" integrity="sha384-1IGr2Yb8xuHjwTG+WoGjj2+I/a/N6z0gDD5YIGCQxywPROOKc3+orbn/R7arWQxD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.js" integrity="sha384-I2b1Pcl48X93GxEkGkaMo1hrd6n+IX8H2wgSsMimGbkZoGTve/87h1FjaDNvlpQi" crossorigin="anonymous"></script>
+
+    <!-- MQ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.js"></script>
+    <script>
+        var MQ = MathQuill.getInterface(2);
+    </script>
+
+    <!-- Unused: <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    -->
+
+
+    <!-- Local -->
+    <link rel="stylesheet" href="latex-editor.css">
+    <script defer src="latex-editor.js"></script>
+
+
+</head>
+
+<body class="has-background-white">
+
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <textarea rows="10" id="textbox"></textarea>
+            </div>
+            <div class="column">
+                <div class="box">
+                Everything is fine.
+
+                <p><span id="mq">\text{Type something in here...}</span></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="is-divider"></div>
+    <section class="section">
+        <p class="subtitle is-1" id="numberText"></p>
+    </section>
+    <!-- Useful for math -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math -->
+
+
+    <!-- Made with Replit -->
+    <!--     <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
+</body>
+
+</html>
+
+<!-- Previous -->
