@@ -16,7 +16,7 @@ This is a web project that is geared towards amateurs with LaTex, or complete be
 ### To-do and current limitations (adding more soon if I get more ideas):
 ###### ~~if I'm not lazy OR if someone helps commit to this repository for some reason~~
 ###### Listed in order in priority, and creation order.
-* Add a way so that as you type in `MathField` in MathQuill, it immediately takes the LaTex from MQ, and pastes the LaTex in the KaTex text-box. Have it immediately render it using KaTex in real time.
+~~* Add a way so that as you type in `MathField` in MathQuill, it immediately takes the LaTex from MQ, and pastes the LaTex in the KaTex text-box. Have it immediately render it using KaTex in real time.~~
   * MQ may sometimes prevent newline.
   * On certain systems, the fonts looks a bit broken
   * Enter key sends `\newline` into KaTex box.
