@@ -7,3 +7,11 @@ textarea {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
 }
+
+.divider {
+    border: 1px solid #dbdbdb;
+}
+
+.font-size{
+    font-size: 50px;
+}
