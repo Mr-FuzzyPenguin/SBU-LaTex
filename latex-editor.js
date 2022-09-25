@@ -1,18 +1,20 @@
 // KATEX
 const latex_input = document.getElementById("textbox");
 let result = document.getElementById("numberText");
+
+// Debug start
+latex_input.value = "";
+
+
 katex.throwOnError = false;
 
 function convert() {
-    const userInput = latex_input.value
+    const userInput = latex_input.value;
     try
     {
-        katex.render(userInput,result,displayMode=true,throwOnError=false)
-        result.classList.add("is-1")
+        katex.render(userInput, result, {"displayMode":true,"leqno":false,"fleqn":true,"throwOnError":true,"errorColor":"#cc0000","strict":"warn","output":"htmlAndMathml","trust":false,"macros":{"\\f":"#1f(#2)"}})
     }
     catch (e) {
-        result.classList.remove("is-1")
-        result.classList.add("is-3")
         if (e instanceof katex.ParseError) {
             result.innerHTML = e
         }
@@ -31,8 +33,18 @@ let mq = document.getElementById('mq');
 let mq_input = MQ.MathField(mq, {
     handlers: {
       edit: function() {
-        console.log(mq_input.latex()); // Get entered math in LaTeX format
+        latex = mq_input.latex()
+        const userInput = latex_input.value
+      },
+      enter: function()
+      {
+        // hacky way of making the rendered latex, katexbox and mathquill update all at the same time, and delete
+        latex_input.value += latex + "\\newline \n"
+        convert();
+        mq_input.select();
+        mq_input.keystroke('Backspace');
       }
     }
 });
+
 
